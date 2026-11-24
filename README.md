@@ -34,7 +34,7 @@ cd backend
 
 Copy-Item .env.example .env
 
-py -3.13 -m venv .venv
+py -m venv .venv
 
 .venv\Scripts\Activate.ps1
 
