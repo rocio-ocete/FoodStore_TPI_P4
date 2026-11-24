@@ -8,11 +8,7 @@
 
 Food Store es una aplicación web de gestión y venta de productos. Permite consultar el catálogo, administrar categorías y productos, realizar pedidos y gestionar las operaciones desde un panel de administración.
 
-El proyecto está desarrollado con un backend en FastAPI y un frontend en React con TypeScript, conectado a una base de datos PostgreSQL.
-
-## Requisitos
-
-Para ejecutar el proyecto se necesita:
+El proyecto está desarrollado con un backend en FastAPI y un frontend en React con TypeScript, conectado a una base de datos **SQLite**, que permite almacenar y gestionar la información de usuarios, categorías, productos y pedidos.
 
 ## Requisitos
 
@@ -23,11 +19,9 @@ Para ejecutar el proyecto se necesita:
 
 ## Configuración de la base de datos
 
-Antes de iniciar el backend:
+El proyecto utiliza SQLite como sistema de gestión de base de datos. La aplicación crea o utiliza automáticamente el archivo `foodstore.db` para almacenar la información.
 
-1. Instalar y ejecutar PostgreSQL.
-2. Crear la base de datos que utilizará la aplicación.
-3. Configurar los datos de conexión en el archivo `backend/.env`.
+No es necesario instalar ni configurar un servidor de base de datos adicional.
 
 ## Backend
 
@@ -98,9 +92,7 @@ El archivo `frontend/.env.example` contiene la configuración necesaria para con
 
 La variable `VITE_API_URL` debe apuntar a la dirección de la API. Para el entorno local:
 
-```env
 VITE_API_URL=http://localhost:8000/api/v1
-```
 
 ### Compilación y ejecución
 
