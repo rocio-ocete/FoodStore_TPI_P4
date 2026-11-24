@@ -54,7 +54,7 @@ No es necesario instalar un servidor de base de datos adicional para ejecutar la
 Para cargar los datos iniciales de la aplicación, ejecutar:
 
 ```bash
-python -m app.db.seed
+py -m app.db.seed
 ```
 
 Este comando carga el usuario administrador, las categorías y los productos iniciales.
